@@ -5,7 +5,7 @@
 static int getInt(int*pResultado);
 static int esNumerica(char* cadena);
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /**
  *
  * \brief Suma los valores ingresados en valor1(x) y valor2(y).
@@ -19,7 +19,7 @@ int math_sumInt (int x, int y)
    return x+y;
 }
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /**
  *
  * \brief Resta los valores ingresados en valor1(x) y valor2(y).
@@ -32,7 +32,7 @@ int math_subtractionInt(int x, int y)
 {
     return x-y;
 }
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /**
  * \brief Multiplica los valores ingresados en valor1(x) y valor2(y).
@@ -46,6 +46,7 @@ int math_multiplicationInt (int x, int y)
     return x*y;
 }
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /**
  *
  * \brief Divide los valores ingresados en valor1(x) y valor2(y).
@@ -73,7 +74,7 @@ float math_divisionint(float *pResultado, int x , int y)
     return retorno;
 }
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /**
  * \brief Factorial toma el valor de x y realiza la multiplicación de todos los números enteros positivos desde 1 hasta el valor ingresado.
@@ -94,7 +95,7 @@ long int math_factorialInt(int x)
 }
 
 
-
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 /**
  * \brief utn_getNumero solicita un número al usuario, lo valida y devuelve el número ingresado.
  * \param pResultado Puntero donde se guardará el número ingresado.
@@ -143,6 +144,7 @@ int math_getNumber(int* pResultado,char*mensaje, char*mensajeError, int minimo,i
 	return ret;
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 static int getInt(int*pResultado)
 {
@@ -159,6 +161,8 @@ static int getInt(int*pResultado)
 	return ret;
 }
 
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 static int esNumerica(char* cadena)
 {
 	int ret=-1;
@@ -181,6 +185,8 @@ static int esNumerica(char* cadena)
 	return ret;
 }
 
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /**
  * \brief math_messageCalculated IMPRIME MENSAJE DE QUE SE HAN CALCULADO LAS OPERACIONES SUMA, RESTA,MULTIPLICACIÓN, DIVISIÓN Y FACTORIAL,
