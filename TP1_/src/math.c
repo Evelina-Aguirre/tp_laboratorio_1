@@ -241,7 +241,7 @@ void math_messageResult(int CondicionAValidar,int valorUno,int valorDos,int suma
 						"Suma : %d\n"
 						"Resta: %d\n"
 						"Multiplicación :%d\n"
-						"División : * Para realizar esta operación el divisor de be ser diferente de 0 *\n"
+						"División : * Para realizar esta operación el divisor debe ser diferente de 0 *\n"
 						"Factorial Operando 1 : %ld\n"
 						"Factorial Operando 2: %ld\n\n"
 						"**************************************************************\n\n"

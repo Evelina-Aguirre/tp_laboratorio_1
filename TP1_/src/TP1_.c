@@ -40,7 +40,7 @@ int main(void) {
 			}
 			if(flagB==0)
 			{
-				printf("2-Ingresar 2do operando (B=x) \n");
+				printf("2-Ingresar 2do operando (B=y) \n");
 			}
 			else
 			{
@@ -62,27 +62,27 @@ int main(void) {
 
 		if(respuestaMenu==0)
 		{
-			switch(opcionMenu)//CASOS OPCIONES MENU.
+			switch(opcionMenu)
 			{
 
-			case 1:
+			case 1://Toma valor A y marca que se ingresó.
 				math_getNumber(&a,"\nIngrese el primer valor a calcular : ","Error.\n\n\n", -99999,99999,3);
 				flagA=1;
 
 
 				break;
-			case 2:
+			case 2://Toma valor B y marca que se ingresó.
 				math_getNumber(&b,"\nIngrese el segundo valor a calcular : ","Error.\n\n\n", -99999,99999,3);
 				flagB=1;
 
 				break;
 
-			case 3://INFORMA QUE SE REALIZARON LAS 5 OPERACIONES
-					if(flagA==0 && flagB==0)//CASO =NOSE INGRESO NINGUN VALOR
+			case 3://INFORMA QUE SE REALIZARON LAS 5 OPERACIONES.
+					if(flagA==0 && flagB==0)//Si no se ingresó ningún valor.
 					{
-						printf("\n\n* DEBE INGRESAR ALMENOIS UN VALOR PARA OPERAR *\n\n");
+						printf("\n\n* DEBE INGRESAR ALMENOS UN VALOR PARA OPERAR *\n\n");
 					}
-					else if(flagA==0 && flagB==1)//CASO =SOLO SE INGRESO B
+					else if(flagA==0 && flagB==1)//Si sólo ingresó valor B.
 					{
 						factorialB=math_factorialInt(b);
 						printf("\n**************************************************************\n\n");
@@ -91,7 +91,7 @@ int main(void) {
 						printf("\n\nIngrese -4- para ver resultado...\n\n");
 						printf("\n**************************************************************\n\n");
 					}
-					else if(flagA==1 && flagB==0)//CASO =SOLO SE INGRESO A
+					else if(flagA==1 && flagB==0)//Si sólo ingresó valor A.
 					{
 						factorialA=math_factorialInt(a);
 						printf("\n**************************************************************\n\n");
@@ -118,7 +118,6 @@ int main(void) {
 					}
 					else//MARCA QUE EL DIVISOR ES 0 PARA INFORMARLO MÁS TARDE.
 					{
-						respuestaDivision=0;
 						divisionValida=-1;
 					}
 
@@ -126,18 +125,18 @@ int main(void) {
 					break;
 
 			case 4://INFORMA EL RESULTADO
-				if(flagA==0 && flagB==0)
+				if(flagA==0 && flagB==0)//Si no se ingresó ningún valor.
 				{
 					printf("\n\n* DEBE INGRESAR ALMENOIS UN VALOR PARA OPERAR*");
 				}
-				else if(flagA==0 && flagB==1)
+				else if(flagA==0 && flagB==1)//Si sólo ingresó valor B.
 				{
 					printf("\n**************************************************************\n\n");
 					printf("\n\nFACTORIAL de %d : %ld",b,factorialB);
 					printf("\n\n * PARA REALIZAR EL RESTO DE LAS OPERACIONES DEBE INGRESAR DOS VALORES *\n\n");
 					printf("\n**************************************************************\n\n");
 }
-				else if(flagA==1 && flagB==0)
+				else if(flagA==1 && flagB==0)//Si sólo ingresó valor A.
 				{
 					printf("\n**************************************************************\n\n");
 					printf("\n\nFACTORIAL de %d : %ld",a,factorialA);
