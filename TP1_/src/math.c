@@ -146,6 +146,7 @@ int math_getNumber(int* pResultado,char*mensaje, char*mensajeError, int minimo,i
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 static int getInt(int*pResultado)
 {
 	int ret=-1;
@@ -241,7 +242,7 @@ void math_messageCalculated(int CondicionAValidar,int valorUno,int valorDos)
 
 void math_messageResult(int CondicionAValidar,int valorUno,int valorDos,int suma,int resta,int multiplicacion,float respuestaDivision,long factorialA,long factorialB)
 {
-	if(CondicionAValidar!=1)//RESPUESTA EN CASO DE DIVISIÓN CORRECTA
+	if(CondicionAValidar!=0)//RESPUESTA EN CASO DE DIVISIÓN CORRECTA
 				{
 				printf("\n******* RESULTADO DE OPERACIONES CON VALORES %d y %d  *********\n\n"
 						"Suma : %d\n"
